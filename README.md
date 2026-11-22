@@ -14,6 +14,10 @@ MAKEFUN_ENV_URL=http://localhost:8080 python3 main.py
 
 It plays a full gauntlet trial through the env at `MAKEFUN_ENV_URL`: POST /game serves each game, POST /move plays its moves, until the env answers done.
 
+## This entry (v6)
+
+Two search changes over the previous entry, both validated head-to-head before submitting: delta pruning in quiescence, and depth-preferred replacement in the transposition table. In 40 paired games at the full node budget on a fresh opening set (colours swapped), this build scored 57.5% against the previous entry (17 wins, 12 draws, 11 losses, about +53 Elo). The readable source travels with the bundle as the compress pack's source file.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=96vj4f52&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
